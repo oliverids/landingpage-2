@@ -1,3 +1,6 @@
+const links = document.querySelectorAll('a');
+links.forEach(e => e.addEventListener('click', e => { e.preventDefault() }))
+
 const popup = document.getElementById('popup'),
     close = document.getElementById('close'),
     envio = document.getElementById('enviar'),
@@ -20,11 +23,19 @@ function Negado() {
     popup.style.display = "none";
 }
 
+let tempo = 2000;
 function Perguntar() {
     setTimeout(() => {
         popup.style.display = "flex";
-    }, 1000);
+    }, tempo);
 }
+
+promo.addEventListener('click', () => {
+    if (!("permissao" in localStorage)) {
+        tempo = 1;
+        Perguntar();
+    }
+})
 
 permissao = localStorage.getItem('permissao');
 if (!("permissao" in localStorage)) {
@@ -50,4 +61,7 @@ envio.addEventListener('click', () => {
 
 nao.addEventListener('click', Negado);
 
-promo.addEventListener('click', Perguntar)
+
+
+
+
