@@ -7,8 +7,27 @@ const popup = document.getElementById('popup'),
     email = document.getElementById('email'),
     promo = document.getElementById('promo'),
     nao = document.getElementById('naoquer');
-let permissao;
 
+function Perguntar() {
+    setTimeout(() => {
+        popup.style.display = "flex";
+    }, 2000);
+}
+
+function Checa() {
+    let useremail = email.value;
+
+    if ((useremail.length == 0)) {
+        alert('Digite um email!')
+    } else if (!(useremail.includes('@')))
+        alert('Digite um email válido!')
+    else {
+        Cadastro();
+        return;
+    }
+}
+
+let permissao;
 function Cadastro() {
     alert('Email cadastrado com sucesso!!');
     localStorage.setItem("email", email.value);
@@ -23,20 +42,6 @@ function Negado() {
     popup.style.display = "none";
 }
 
-let tempo = 2000;
-function Perguntar() {
-    setTimeout(() => {
-        popup.style.display = "flex";
-    }, tempo);
-}
-
-promo.addEventListener('click', () => {
-    if (!("permissao" in localStorage)) {
-        tempo = 1;
-        Perguntar();
-    }
-})
-
 permissao = localStorage.getItem('permissao');
 if (!("permissao" in localStorage)) {
     Perguntar();
@@ -46,7 +51,10 @@ close.addEventListener('click', () => {
     popup.style.display = "none";
 })
 
-envio.addEventListener('click', () => {
+envio.addEventListener('click', Checa)
+nao.addEventListener('click', Negado);
+
+function inferno() {
     let useremail = email.value;
 
     if ((useremail.length == 0)) {
@@ -57,9 +65,25 @@ envio.addEventListener('click', () => {
         Cadastro();
         return;
     }
-})
+}
 
-nao.addEventListener('click', Negado);
+promo.addEventListener('click', () => {
+    popup.style.display = "flex";
+    let popped;
+
+    if (popped) {
+        let useremail = email.value;
+
+        if ((useremail.length == 0)) {
+            alert('Digite um email!')
+        } else if (!(useremail.includes('@')))
+            alert('Digite um email válido!')
+        else {
+            Cadastro();
+            return;
+        }
+    }
+})
 
 
 
