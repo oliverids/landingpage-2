@@ -4,6 +4,7 @@ footer {
     #promo {
         background: $vermelho;
         padding: 12px 0;
+        transition: .2s;
 
         .container {
             p {
@@ -13,6 +14,10 @@ footer {
                 text-align: center;
             }
         }
+    }
+    #promo:hover {
+        background: #d62e1b;
+        transition: .2s;
     }
 
     .copy {
