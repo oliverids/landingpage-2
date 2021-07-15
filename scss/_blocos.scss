@@ -1,0 +1,77 @@
+.blocos {
+    .container {
+        h1 {
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            color: $azul-escuro;
+        }
+
+        .b-itens {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                justify-content: center;
+                text-align: center;
+                background: $amarelo;
+                border-radius: 6px;
+                width: 300px;
+                padding: 20px 0;
+                color: $preto;
+                transition: .3s;
+                margin-bottom: 24px;
+
+                h3 {
+                    margin-bottom: 20px;
+
+                    span {
+                        font-weight: $exbold;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            .item:hover {
+                background: #ffca1a;
+                transition: .3s;
+            }
+            .item:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.cards {
+    .container {
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .card {
+                padding: 20px 12px;
+                text-align: center;
+                background: $laranja;
+                border-radius: 6px;
+                margin-bottom: 24px;
+                transition: .3s;
+
+                a {
+                    color: $preto;
+                    font-weight: $semi;
+                }
+            }
+            .card:hover {
+                background: #fd5000;
+            }
+            .card:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
