@@ -53,6 +53,7 @@ button, a {
 }
 
 #popup {
+  display: none;
   background: #ECF0F1;
   padding: 44px 24px;
   border-radius: 6px;
@@ -64,6 +65,7 @@ button, a {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 20px rgba(17, 66, 90, 0.63);
+  animation: show .5s forwards;
 }
 
 #popup .p-container {
@@ -109,11 +111,34 @@ button, a {
   border: #2C3E50 solid 1px;
   border-radius: 4px;
   font-size: 1em;
+  width: 100%;
 }
 
-#popup .p-container #enviar {
+#popup .p-container .btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popup .p-container .btns #enviar, #popup .p-container .btns #naoquer {
   font-size: 1.2em;
   margin-top: 20px;
+}
+
+#popup .p-container .btns #enviar {
+  margin-right: 12px;
+  background-color: #3498DB;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -70%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 header {
