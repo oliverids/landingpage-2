@@ -182,6 +182,25 @@ header .container .user-info #search {
   margin: 0;
 }
 
+main {
+  padding: 100px;
+  background: url("img/fundo.jpg");
+  background-position: center center;
+  background-size: cover;
+  object-fit: fill;
+  background-repeat: no-repeat;
+}
+
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .container img {
+  min-width: 260px;
+}
+
 .blocos .container h1 {
   text-align: center;
   line-height: 1.5;
@@ -459,6 +478,10 @@ footer .copy .container p:first-child {
   }
 }
 
+main .container img {
+  width: 400px;
+}
+
 @media screen and (min-width: 1200px) {
   body {
     font-size: 20px;
@@ -482,6 +505,9 @@ footer .copy .container p:first-child {
   .cards .container ul .card {
     width: 320px;
     margin: 0;
+  }
+  main .container img {
+    width: 600px;
   }
 }
 /*# sourceMappingURL=style.css.map */

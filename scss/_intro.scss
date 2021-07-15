@@ -38,3 +38,22 @@ header {
         }
     }
 }
+
+main {
+    padding: 100px;
+    background: url("img/fundo.jpg");
+    background-position: center center;
+    background-size: cover;
+    object-fit: fill;
+    background-repeat: no-repeat;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            min-width: 260px;
+        }
+    }
+}
