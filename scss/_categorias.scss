@@ -5,5 +5,59 @@
             color: $preto;
             margin-bottom: 32px;
         }
+
+        .c-itens {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 0 20px 16px 0;
+                    min-width: 140px;
+                    transition: 0.3s;
+
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                        height: 180px;
+                        border-radius: 6px;
+                        background: $azul-claro;
+                        color: $branco;
+
+                        img {
+                            max-width: 75px;
+                        }
+                    }
+
+                    h4 {
+                        margin-top: 16px;
+                        align-self: center;
+                        font-size: 18px;
+                        color: $preto;
+                        font-weight: $normal;
+                        text-align: center;
+                    }
+                }
+                a:hover {
+                    background: #347cdb;
+                    transition: 0.3s;
+                }
+                li:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
     }
 }

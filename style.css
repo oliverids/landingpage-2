@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Inter', sans-serif;
 }
 
@@ -29,19 +29,19 @@ a {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.375;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.25;
 }
 
 img {
@@ -111,7 +111,7 @@ header .container .user-info #search {
 .blocos .container .b-itens .item {
   justify-content: center;
   text-align: center;
-  background: #FFE11A;
+  background: #ffd51a;
   border-radius: 6px;
   width: 300px;
   padding: 20px 0;
@@ -130,7 +130,7 @@ header .container .user-info #search {
 }
 
 .blocos .container .b-itens .item:hover {
-  background: #ffca1a;
+  background: #ffc21a;
   transition: .3s;
 }
 
@@ -156,6 +156,7 @@ header .container .user-info #search {
 
 .cards .container ul .card a {
   color: #323232;
+  font-size: 1.3em;
   font-weight: 600;
 }
 
@@ -171,5 +172,175 @@ header .container .user-info #search {
   text-align: center;
   color: #323232;
   margin-bottom: 32px;
+}
+
+.categorias .container .c-itens {
+  display: flex;
+  align-items: center;
+}
+
+.categorias .container .c-itens ul {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.categorias .container .c-itens ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20px 16px 0;
+  min-width: 140px;
+  transition: 0.3s;
+}
+
+.categorias .container .c-itens ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 180px;
+  border-radius: 6px;
+  background: #3498DB;
+  color: #ECF0F1;
+}
+
+.categorias .container .c-itens ul li a img {
+  max-width: 75px;
+}
+
+.categorias .container .c-itens ul li h4 {
+  margin-top: 16px;
+  align-self: center;
+  font-size: 18px;
+  color: #323232;
+  font-weight: 400;
+  text-align: center;
+}
+
+.categorias .container .c-itens ul a:hover {
+  background: #347cdb;
+  transition: 0.3s;
+}
+
+.categorias .container .c-itens ul li:last-child {
+  margin-right: 0;
+}
+
+.vendidos .container ul {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.vendidos .container ul li {
+  background: #ECF0F1;
+  padding: 16px;
+  border-radius: 6px;
+  height: 350px;
+  width: 250px;
+  margin: 0 20px 16px 0;
+}
+
+.vendidos .container ul li a {
+  display: flex;
+  flex-direction: column;
+  color: #323232;
+}
+
+.vendidos .container ul li a .foto {
+  width: 200px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+.vendidos .container ul li a .foto-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 8px;
+  margin-bottom: 12px;
+}
+
+.vendidos .container ul li a .foto-info p {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.vendidos .container ul li a .foto-info span {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #E74C3C;
+}
+
+.vendidos .container ul li a button {
+  background: #E74C3C;
+  width: 120px;
+  padding: 8px 0;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #ECF0F1;
+  border-radius: 6px;
+  border: none;
+  transition: 0.3s;
+}
+
+.vendidos .container ul li a button:hover {
+  background: #d62e1b;
+  transition: 0.3s;
+}
+
+.vendidos .container ul li:nth-child(2) a .foto img {
+  margin: -90px 0 0 0;
+}
+
+.vendidos .container ul li:nth-child(3) a .foto img {
+  width: 85%;
+  margin: -60px 0 0 0;
+}
+
+footer {
+  margin-top: 54px;
+}
+
+footer #promo {
+  background: #E74C3C;
+  padding: 12px 0;
+}
+
+footer #promo .container p {
+  font-size: 1.4em;
+  color: #ECF0F1;
+  font-weight: 700;
+  text-align: center;
+}
+
+footer .copy {
+  background: #2C3E50;
+  padding: 8px 0;
+}
+
+footer .copy .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ECF0F1;
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer .copy .container p:first-child {
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -35,7 +35,7 @@
                 }
             }
             .item:hover {
-                background: #ffca1a;
+                background: #ffc21a;
                 transition: .3s;
             }
             .item:last-child {
@@ -63,6 +63,7 @@
 
                 a {
                     color: $preto;
+                    font-size: 1.3em;
                     font-weight: $semi;
                 }
             }

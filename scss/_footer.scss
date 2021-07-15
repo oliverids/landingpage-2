@@ -1,0 +1,36 @@
+footer {
+    margin-top: 54px;
+
+    #promo {
+        background: $vermelho;
+        padding: 12px 0;
+
+        .container {
+            p {
+                font-size: 1.4em;
+                color: $branco;
+                font-weight: $bold;
+                text-align: center;
+            }
+        }
+    }
+
+    .copy {
+        background: $azul-escuro;
+        padding: 8px 0;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: $branco;
+            font-weight: $normal;
+            text-align: center;
+            font-size: 0.9em;
+
+            p:first-child {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
