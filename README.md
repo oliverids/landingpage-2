@@ -1,4 +1,4 @@
-<h1 align="center" margin-bottom="32px">CashOut Lading Page</h1>
+<h1 align="center" margin-bottom="32px">CashOut Landing Page</h1>
 <h2 align="center">Gama Academy</h2>
 
 <p>Esse projeto foi motivado pelo desafio da 4ª semana do Gama Academy, 2021.</p>
