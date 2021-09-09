@@ -21,4 +21,4 @@
 
 ***
 
-#### Confira a [CashOut](https://github.com/oliverids/landingpage-2/).
+#### Confira a [CashOut](https://oliverids.github.io/landingpage-2/).
